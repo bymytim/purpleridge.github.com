@@ -1,0 +1,155 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "parabolica", sans-serif;
+    cursor: url('Assets/gros.png'), auto;
+
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.logo-overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.content {
+    display: flex;
+    flex-direction: column; /* Empile les enfants verticalement */
+    gap: 40px; /* Espace vertical entre les containers */
+    padding: 0px;
+    text-align: left;
+    
+
+    .image-text-container {
+        display: flex;
+        align-items: left;
+        gap: 40px; /* Espace entre l'image et le texte */
+        padding-top: 80px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        padding-left: 80px;
+      }
+      
+      .image-text-container .image {
+        display: flex;
+        width: 40%; /* Largeur de l'image */
+        max-width: 100%; /* Pour éviter que l'image dépasse son conteneur */
+        height: auto; /* Maintient les proportions de l'image */
+        object-fit: cover; /* Ajuste le contenu */
+      }
+      
+      .image-text-container .text {
+        flex: 1; /* Prend l'espace restant */
+      }
+      
+      .image-text-container .text h2 {
+        margin: 0 0 10px; /* Espace sous le titre */
+        font-size: 3rem; /* Taille du titre */
+      }
+      
+      .image-text-container .text p {
+        margin: 0;
+        font-size: 1rem; /* Taille du texte */
+        line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+      }
+
+      .image-text-container2 {
+        justify-content: flex-end; /* Aligne le conteneur à droite */
+        display: flex;
+        align-items: right;
+        gap: 40px; /* Espace entre l'image et le texte */
+        padding-top: 80px;
+        padding-right: 80px;
+        padding-bottom: 20px;
+        padding-left: 80px;
+      }
+      
+      .image-text-container2 .image {
+        display: flex;
+        width: 40%; /* Largeur de l'image */
+        max-width: 100%; /* Pour éviter que l'image dépasse son conteneur */
+        height: auto; /* Maintient les proportions de l'image */
+        object-fit: cover; /* Ajuste le contenu */
+    }
+        
+    .text-container {
+        display: flex;
+        align-items: left;
+        gap: 40px; /* Espace entre l'image et le texte */
+        padding-top: 80px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        padding-left: 80px;
+      }
+
+      .text-container .text h2 {
+        margin: 0 0 10px; /* Espace sous le titre */
+        font-size: 3rem; /* Taille du titre */
+      }
+      
+      .content .text p {
+        color: #6951eb;
+        margin: 0;
+        font-size: 1rem; /* Taille du texte */
+        line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+      }
+
+/* Pour centrer l'image */
+.image-containerbasique {
+    text-align: center; /* Centre le contenu */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.image-containerbasique img {
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur de l'écran */
+    height: auto; /* Garde les proportions */
+    display: inline-block; /* S'assure que l'image reste dans le flux */
+}
+
+.image-text-containerend {
+    display: flex;
+    align-items: left;
+    gap: 40px; /* Espace entre l'image et le texte */
+    padding-top: 80px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+  }
+  
+  .image-text-containerend .image {
+    display: flex;
+    width: 40%; /* Largeur de l'image */
+    max-width: 100%; /* Pour éviter que l'image dépasse son conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+    object-fit: cover; /* Ajuste le contenu */
+  }
+  
+  .image-text-containerend .text {
+    flex: 1; /* Prend l'espace restant */
+  }
+  
+  .image-text-containerend .text h2 {
+    margin: 0 0 10px; /* Espace sous le titre */
+    font-size: 3rem; /* Taille du titre */
+  }
+  
+  .image-text-containerend .text p {
+    margin: 0;
+    font-size: 1rem; /* Taille du texte */
+    line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+  }
+
+}
